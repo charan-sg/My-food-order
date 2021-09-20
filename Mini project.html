@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    My Food Delivery
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <style type="text/css">
+    .two {
+      width: 100%;
+      background-color: white;
+    }
+
+    .two:hover {
+      background-color: white;
+      transition: 1s;
+      transform: skewY(10deg);
+    }
+
+    .three {
+      width: 100%;
+      background-color: white;
+    }
+
+    .three:hover {
+      background-color: white;
+      transform: scale(2);
+    }
+
+    .four {
+      width: 100%;
+      background-color: white;
+    }
+
+    .four:hover {
+      background-color: white;
+      transition: 1s;
+      transform: rotateX(180deg);
+    }
+  </style>
+</head>
+<div class="container-fluid" style="margin: 10px;">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#Home"><b> HOME </b> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#aboutus"><b> ABOUT US</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contactus"><b> CONTACT </b></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <b>MENU</b>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-warning" href="#Snacks">SNACKS</a></li>
+                  <li><a class="dropdown-item text-warning" href="#veg/non veg dish">VEG/NON-VEG DISH</a></li>
+                  <li><a class="dropdown-item text-warning" href="#juices">JUICES</a></li>
+                  <li><a class="dropdown-item text-warning" href="#cofee/tea">COFFEE/TEA</a></li>
+
+                </ul>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="search_button"></div>
+            <button class="btn-secondary "> <img src="login.jpg " style="margin: 10px; padding: 10px;"> LOGIN</button>
+            <button class="btn-secondary "><img src="register.jpg" style="margin: 10px; padding:10px;"> REGISTER
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="row mb-4 mt-2">
+      <div class="col-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="food1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style=color:white " >BRINGING JOY OF FOOD</h1>
+                        <h2 style=" color: aliceblue;">
+                  <p>People who love to eat are always the best people. - Julia Child.</p>
+                  </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="food2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color:white">MADE WITH LOVE.</h1>
+                <h3 style="color:royalblue">
+                  <p>The people who give you their food give you their heart- Cesar Chavez.</p>
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="food3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color:white;">COOKING IS LIKE LOVE.</h1>
+                <h3>
+                  <p> My love for you is pizza shaped. Won't you have a slice? It's circular, so there's enough to go
+                    around - Dora J. Arod.</p>
+                </h3>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="row mt-3 mb-1">
+          <div class="col-md-6">
+            <img src="tastyfood.jpg">
+          </div>
+          <div class="col-md-6 ">
+            <h1 style="color: red; text-align:center; font-family: cursive; font-size: 90px;"><b><i>Welcome at </i></b>
+            </h1>
+            <h2
+              style="color: black; text-align:right; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 75px;">
+              FOOD RESTURANT</h2>
+            <p style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;"><em>When you eat food with
+                your family and friends, it always tastes better!.Nothing is better than going home to family and eating
+                good food and relaxing.We're all so busy we don't make time to enjoy our lives, good company and good
+                food.</em> </p>
+          </div>
+        </div>
+        <div class="three">
+          <h1 class="mb-4"
+            style="text-align: center; color: blue; background-color: chartreuse; font-family:Georgia, 'Times New Roman', Times, serif;">
+            <b><em><i>EXPLORE OUR MENU</i></em></b>
+          </h1>
+        </div>
+        <div class="four">
+          <h2 style="text-align: center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            DELECIOUS SNACKS</h2>
+        </div>
+        <div class="row mt-5 mb-2">
+          <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+            <div class="two">
+              <div class="card" style="width:100%;">
+                <img src="pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-info text-center">PIZZA</h5>
+                  <p class="card-text">When Life gives you PIZZA, Eat it quikely before anyone realilize that you have
+                    it.! Then Order Now only @ RS 399 </p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-xl-4 col-xxl-4">
+            <div class="two">
+              <div class="card" style="width:100%;">
+                <img src="tandoori_chicken.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-info">VEG AKKA NOODLES </h5>
+                  <p class="card-text">Without noodles, there is no peace. Then Order Now only @ RS 150</p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+            <div class="two">
+              <div class="card" style="width:100%;">
+                <img src="sandwitch.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-info text-center">GRILLED SANDWITCH</h5>
+                  <p class="card-text">Life is like a sandwich, the more you add to it, the better it becomes. Order Now
+                    only @ RS 149</p>
+                  <a href="#" class="btn btn-primary">Order Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+              <div class="two">
+                <div class="card" style="width:100%;">
+                  <img src="burger.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-info text-center">BURGER</h5>
+                    <p class="card-text">A burger without cheese is like a hug without a squeeze.Order Now only @ RS 130
+                    </p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+              <div class="two">
+                <div class="card" style="width:100%;">
+                  <img src="panipuri.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-info">PANI PURI</h5>
+                    <p class="card-text">Kuch Bhi Kaho Lekin Ladkiyon Ka Pehla Pyaar Toh Golgappe Hi Hote Hai. Order Now
+                      only @ RS 79</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-xl-4 col-xxl-4">
+              <div class="two">
+                <div class="card" style="width:100%;">
+                  <img src="onion.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title text-info text-center">ONION BAJJI</h5>
+                    <p class="card-text">People who love to eat are always the best people. Order now only @ RS 49</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 mb-4">
+              <div class="four">
+                <h2
+                  style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                  VEG/NON VEG DELECIOUS</h2>
+              </div>
+              <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                <div class="two">
+                  <div class="card" style="width:100%;">
+                    <img src="ChickenFriedRice.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-info text-center">CHICKEN FRIED RICE</h5>
+                      <p class="card-text">Fried rice for the soul! #forthesoul. Order Now only @ RS 130</p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                <div class="two">
+                  <div class="card" style="width:100%;">
+                    <img src="chicken-Biryani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-info">CHICKEN BIRYANI</h5>
+                      <p class="card-text">Chicken curry is a dish,But biryani is a emotion!!!. Order Now only @ RS 200
+                      </p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                <div class="two">
+                  <div class="card" style="width:100%;">
+                    <img src="chicken tikka.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-info text-center">CHICKEN TIKKA</h5>
+                      <p class="card-text">Tasty chicken can make anyone’s day happy. Order Now only @ RS 150</p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-xs-12 col-sm-12 col-xl-4 col-xxl-4">
+                  <div class="two">
+                    <div class="card" style="width:100%;">
+                      <img src="Tiffen.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center text-info">TIFFEN</h5>
+                        <p class="card-text">Say good morning to your body, eat breakfast. Order Now only @ RS 99</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                  <div class="two">
+                    <div class="card" style="width:100%;">
+                      <img src="Lunch.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center text-info">SPECIAL DINNER</h5>
+                        <p class="card-text">Dinner is better when we eat together. Order Now only @ RS 130</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                  <div class="two">
+                    <div class="card" style="width:100%;">
+                      <img src="Night dinner.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center text-info">NIGHT DINNER</h5>
+                        <p class="card-text">Food is our common ground, a universal experience. Order Now only @ RS 130
+                        </p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="four">
+                  <h2
+                    style="text-align: center; color: black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                    JUICES</h2>
+                </div>
+                <div class="row mt-3 mb-5">
+                  <div class="col-xs-12 col-sm-12 col-xl-4 col-xxl-4">
+                    <div class="two">
+                      <div class="card" style="width:100%;">
+                        <img src="Apple_juice.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-info">APPLE JUICE</h5>
+                          <p class="card-text"> An apple a day keeps anyone away if you throw it hard enough. Order Now
+                            only @ RS 49</p>
+                          <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                    <div class="two">
+                      <div class="card" style="width:100%;">
+                        <img src="Mango-Juice.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-info text-center">MANGO JUICE</h5>
+                          <p class="card-text">Mango drink is the drink of the Gods. The mango juice of the real form.
+                            Order now only @ RS 60 </p>
+                          <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12  col-xl-4 col-xxl-4">
+                    <div class="two">
+                      <div class="card" style="width:100%;">
+                        <img src="watermelon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title text-center text-info">WATERMELON JUICE</h5>
+                          <p class="card-text">Watermelons' need positive self affirmations too. Order Now only @ RS 75
+                          </p>
+                          <a href="#" class="btn btn-primary">Order Now</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-address-fluid">
+                  <div class="row mb-0">
+                    <div class="col-12">
+
+                      <div style=" text-align:center; " class="text-right bg-secondary text-light  ">CONTACT US<br><br>
+
+
+                        <a href="HOME"
+                          style="text-align:left; color:ghostwhite; font-family: Arial, Helvetica, sans-serif; text-decoration: none;"><b>HOME</b><br></a>
+                        <a href="ABOUT US"
+                          style="text-align:left; color:ghostwhite; font-family: Arial, Helvetica, sans-serif; text-decoration: none;"><b>ABOUT
+                            US</b><br></a>
+                        <a href="CONTACT US"
+                          style="text-align:left; color:ghostwhite; font-family: Arial, Helvetica, sans-serif; text-decoration: none;"><b>CONTACT
+                            US</b><br></a>
+                        <b><i>
+                            <p style="text-align: right; color:#FC0F5A; font-family: Arial, Helvetica, sans-serif;">
+                              CHARAN S G<br>charansg31@gmail.com <br>+919916883779<br>TIPTUR<br>KARNATAKA</p>
+                          </i></b>
+                        <a href="IntaLogo"><img src="Instagram-Logo.jpg"
+                            style="text-decoration:none; margin: 10px; text-align: left;"><b> Instagram </b></a><br>
+                        <a href="FBLogo"><img src="fblogo.jpg"
+                            style="text-decoration: none; margin: 10px; text-align:right;"><b>Facebook</b></a><br>
+                        <a href="twitterLogo"><img src="twitterlogo.jpg"
+                            style="text-decoration: none; margin: 10px; text-align: left;"><b>Twitter</b></a><br>
+
+
+                      </div>
+                    </div>
+                  </div>
+                  </button>
+                </div>
+                <div class="footer-bottom bg-dark text-light"
+                  style="height:30px ; text-align: center; background: black;">
+                  <h4>CopyRight@2021</h4>
+                  <h5 style="background: black; text-align: center;">Privacy Policy|Terms & Conditions| Site Map</h5>
+                </div>
+              </div>
+            </div>
+
+</html>
